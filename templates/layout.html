@@ -4,15 +4,16 @@
 <title>{% block title %}Welcome{% endblock %} — Блог</title>
 <body>
   <header>
-    <h1>Блог</h1>
+    <h1>{{ config.PROJECT.name }}</h1>
     <nav>
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
+          %}><a href="{{ '/'|url }}">Домой</a></li>
         {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
+          ['/blog', 'Блог'],
+          ['/articles', 'Статьи'],
+          ['/gallery', 'Фотогалерея'],
+          ['/about', 'Об авторе']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
@@ -24,6 +25,6 @@
     {% block body %}{% endblock %}
   </div>
   <footer>
-    &copy; Copyright 2019 by WST.
+    ©&nbsp;2019 Илья&nbsp;Аверков (WST)
   </footer>
 </body>
