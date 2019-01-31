@@ -1,22 +1,22 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}?v=2">
+<script src="{{ '/static/instantclick.min.js'|url }}?v=1" data-no-instant></script>
 <title>{% block title %}Welcome{% endblock %} — Блог</title>
 <body>
   <header>
-    <h1>Блог</h1>
+    <h1>{{ config.PROJECT.name }}</h1>
     <nav>
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
+          %}><a href="{{ '/'|url }}">Домой</a></li>
         {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
+          ['/blog', 'Блог'],
+          ['/articles', 'Статьи'],
+          ['/gallery', 'Фотогалерея'],
+          ['/about', 'Об авторе']
+        ] %}<li{% if this.is_child_of(href) %} class="active"{% endif
+            %}><a href="{{ href|url }}">{{ title }}</a></li>{% endfor %}
       </ul>
     </nav>
   </header>
@@ -24,6 +24,7 @@
     {% block body %}{% endblock %}
   </div>
   <footer>
-    &copy; Copyright 2019 by WST.
+    ©&nbsp;2019 Илья&nbsp;Аверков (WST)
   </footer>
+<script data-no-instant>InstantClick.init('mousedown');</script>
 </body>

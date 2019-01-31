@@ -1,6 +1,5 @@
-title: Welcome to Блог!
+title: Приветствую!
 ---
 body:
 
-This is a basic demo website that shows how to use Lektor for a basic
-website with some pages and a blog.
+<p>Меня зовут Илья и, наверное, вы это уже знаете. В скором времени здесь появится более-менее полноценный сайт, а пока что я просто осваиваю инструментарий в виде великолепного <a href="https://www.getlektor.com/" title="Генератор статических сайтов">Lektor</a> и ставлю над ним свои опыты.</p>
