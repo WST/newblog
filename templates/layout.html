@@ -1,30 +1,25 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}?v=2">
-<script src="{{ '/static/instantclick.min.js'|url }}?v=1" data-no-instant></script>
-<title>{% block title %}Welcome{% endblock %} — Блог</title>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{{ '/static/style.css'|url }}?v=2">
+	<script src="{{ '/static/instantclick.min.js'|url }}?v=1" data-no-instant></script>
+	<title>{% block title %}Welcome{% endblock %} — Блог</title>
+</head>
 <body>
-  <header>
-    <h1>{{ config.PROJECT.name }}</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Домой</a></li>
-        {% for href, title in [
-          ['/blog', 'Блог'],
-          ['/articles', 'Статьи'],
-          ['/gallery', 'Фотогалерея'],
-          ['/about', 'Об авторе']
-        ] %}<li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>{% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    ©&nbsp;2019 Илья&nbsp;Аверков (WST)
-  </footer>
-<script data-no-instant>InstantClick.init('mousedown');</script>
+	<header>
+		<h1>{{ config.PROJECT.name }}</h1>
+		<nav>
+			<ul class="nav navbar-nav">
+				<li{% if this._path == '/' %} class="active"{% endif %}><a href="{{ '/'|url }}">Домой</a></li>{% for href, title in [['/blog', 'Блог'], ['/articles', 'Статьи'], ['/gallery', 'Фотогалерея'], ['/about', 'Об авторе']] %}<li{% if this.is_child_of(href) %} class="active"{% endif %}><a href="{{ href|url }}">{{ title }}</a></li>{% endfor %}
+			</ul>
+		</nav>
+		<div id="pony" style="float: right;position: relative; top: -180px; left: 0px; width: 164px; height: 200px; background-image: url('/static/images/really_cute_apple_bloom_by_kuren247-d6kdnrh.png');"></div>
+	</header>
+	<div class="page">
+		{% block body %}{% endblock %}
+	</div>
+	<footer>
+		©&nbsp;2019 Илья&nbsp;Аверков (WST)
+	</footer>
+	<script data-no-instant>InstantClick.init('mousedown');</script>
 </body>
