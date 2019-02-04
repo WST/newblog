@@ -3,11 +3,11 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="{{ '/static/style.css'|url }}?v=2">
 	<script src="{{ '/static/instantclick.min.js'|url }}?v=1" data-no-instant></script>
-	<title>{% block title %}Welcome{% endblock %} — Блог</title>
+	<title>{% block title %}Welcome{% endblock %} — AverkovNET</title>
 </head>
 <body>
 	<header>
-		<h1><a href="/" title="{{ config.PROJECT.name }}">{{ config.PROJECT.name }}</a></h1>
+		<h1><a href="/" title="{{ config.PROJECT.name }} — главная страница">{{ config.PROJECT.name }}</a></h1>
 		<nav>
 			<ul class="nav navbar-nav">
 				{% for href, title in [['/blog', 'Блог'], ['/articles', 'Статьи'], ['/gallery', 'Фотогалерея'], ['/about', 'Об авторе']] %}<li{% if this.is_child_of(href) %} class="active"{% endif %}><a href="{{ href|url }}">{{ title }}</a></li>{% endfor %}

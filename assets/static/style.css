@@ -7,7 +7,7 @@ html {
 }
 
 body {
-	font-family: 'Tahoma', 'Arial', 'DejaVu Sans', sans-serif;
+	font-family: 'Arial', 'Tahoma', 'DejaVu Sans', 'Verdana', sans-serif;
 	margin: 50px 25px;
 	background-color: #606b7a;
 	background-image: url('/static/images/background.png');
