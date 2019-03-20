@@ -78,7 +78,9 @@ div.page {
 }
 
 div.page p {
-	font-family: 'Noto Sans UI', 'Noto Sans', 'Arial', 'Tahoma', 'DejaVu Sans', sans-serif;
+	/*font-family: 'Noto Sans UI', 'Noto Sans', 'Arial', 'Tahoma', 'DejaVu Sans', sans-serif;*/
+	font-family: 'Tahoma', 'Arial', 'Noto Sans UI', 'Noto Sans', 'DejaVu Sans', sans-serif;
+	color: #222;
 }
 
 footer {
