@@ -1,6 +1,28 @@
 {% extends "layout.html" %}
+
 {% block title %}{{ this.title }}{% endblock %}
+
 {% block body %}
-  <h2>{{ this.title }}</h2>
-  {{ this.body }}
+	<ul class="breadcrumb">
+		{% set crumbs = [] %}
+		{% set current = {'crumb': this} %}
+		{% for i in this._path.split("/") %}
+			{% if current.crumb is not none %}
+				{% if crumbs.insert(0, current.crumb) %}{% endif %}
+				{% if current.update({"crumb": current.crumb.parent}) %}{% endif %}
+			{% endif %}
+		{% endfor %}
+		{% if crumbs|count > 1 %}
+			{% for crumb in crumbs %}
+				{% if this._path == crumb._path %}
+					<li class="active"><h2>{{ crumb.title }}</h2></li>
+				{% else %}
+					<li><h2><a href="{{ crumb|url }}">{{ crumb.title }}</a></h2></li>
+				{% endif %}
+			{% endfor %}
+		{% else %}
+			<h2>{{ this.title }}</h2>
+		{% endif %}
+	</ul>
+	{{ this.body }}
 {% endblock %}
