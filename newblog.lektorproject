@@ -9,3 +9,6 @@ target = ghpages://WST/wst.github.io?cname=averkov.net
 
 [servers.travis]
 target = ghpages+https://WST/wst.github.io?cname=averkov.net
+
+[packages]
+lektor-markdown-highlighter = 0.3.2

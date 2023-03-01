@@ -6,5 +6,6 @@ body:
 	<li><a href="/articles/tas/">Инструментально-ассистированное скоростное прохождение игр (TAS)</a></li>
 	<li><a href="/articles/photography/">О моём увлечении фотографией</a></li>
 	<li><a href="/articles/laptop-overheat/">Что делать, если ноутбук перегревается?</a></li>
-	<li><a href="/articles/syslog-ng-and-mongodb/">Организация сервера логов на базе syslog-ng и MongoDB</a></li>
+	<!--<li><a href="/articles/syslog-ng-and-mongodb/">Организация сервера логов на базе syslog-ng и MongoDB</a></li>-->
+	<!--<li><a href="/articles/vpn-routes/">Как указать маршруты для VPN-соединения?</a></li>-->
 </ul>
