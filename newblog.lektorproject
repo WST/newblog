@@ -12,4 +12,3 @@ target = ghpages+https://WST/wst.github.io?cname=averkov.net
 
 [packages]
 lektor-markdown-highlighter = 0.3.2
-lektor-minify = 1.2
