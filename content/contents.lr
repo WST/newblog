@@ -1,22 +1,9 @@
 title: Приветствую!
 ---
 body:
-
-<p>Меня зовут Илья, я живу в Майкопе и работаю в сфере телекоммуникаций. Мои увлечения включают программирование, электронику, <a href="/articles/photography/">фотографию</a>, <a href="/articles/tas/">скоростное инструментально-ассистированное прохождение ретро-игр</a>, а также всё, что так или иначе связано с Индонезией, которую я считаю абсолютно потрясающей страной и горячо люблю всей душой.</p>
-
-
-<p>Я также являюсь игроком в Pokémon&nbsp;Go; мой уровень тренера&nbsp;— 50. Я играю под именами sylabulus, Didishka1995, MythicalFireman, pidgey01rus и некоторыми другими.</p>
-
-<p><span class="highlight">Important note for Pokémon trainers:</span> it’s currently useless to send me remote raid invitations, because I cannot buy passes (Google Play is not available for me). You can just add me as a friend, though. My primary friend codes are:</p>
-
-<ul>
-	<li>1965&nbsp;0876&nbsp;9839</li>
-	<li>4773&nbsp;7060&nbsp;9242</li>
-</ul>
+<p>Меня зовут Илья. Значительную часть жизни я посвятил сфере телекоммуникаций и моей стихией были серверные шкафы, гул сетевого оборудования и десятки гигабит в секунду, проходящие буквально сквозь мои пальцы, но сейчас я работаю обычным Senior Backend Developer. Мои увлечения включают программирование, электронику, <a href="/articles/photography/">фотографию</a>, <a href="/articles/tas/">скоростное инструментально-ассистированное прохождение ретро-игр</a>, а также всё, что так или иначе связано с Индонезией, которую я считаю абсолютно потрясающей страной и горячо люблю всей душой.</p>
 
 <p>В прошлом мне нравилось вести блоги (свой первый сайт я создал в 2002 году и уже тогда придерживался такого формата, хотя слово «блог» ещё толком не существовало), но так как в нынешнее время мне это уже не так интересно (мода берёт своё и я фактически перебрался в социальные сети), теперь здесь остаётся минималистичный сайт для отдельных текстовых публикаций, в основном, предназначенных для того, чтобы скидывать ссылки на них во всё тех же социальных сетях.</p>
-
-<p>Я вхожу в число наиболее опытных и авторитетных IT-специалистов в Майкопе, будучи прямо или опосредованно причастным к развитию и становлению нескольких успешных стартапов и компаний, в том числе зарубежных. Могу помочь построить карьеру в IT: DevOps, System programmer, Backend web developer, Frontend web developer, DBA.</p>
 
 <p>Если говорить об IT, примерный список всяких-разных шляп, с которыми я в той или иной степени умею работать, таков: HTML, CSS, PHP, Python, C, C++, JavaScript, bash, Git, Subversion, Github, Redmine, Gitlab, gitlab-runner, CMake, CPack, uWSGI, nginx, Apache, PHP-FPM, Composer, PEAR, PECL, PHP-FIG, PHPUnit, Psalm, Twig, Guzzle, Django, Django REST Framework, Django Crispy Forms, Django Grappelli, Jinja, MySQL, PostgreSQL, SQLite, MongoDB, Lektor, Sphinx (тот, который для документации, а не для поиска), syslog-ng, XML, DOM, expat, XMPP, ejabberd, Prosody, Openfire, XEP-0114, mcabber, qxmpp, libgloox, RSS, GeoIP, Linux, FreeBSD, NetBSD, OpenVZ, Virtuozzo 7, Docker, docker-compose, nmap, libpcap, NetFlow, SNMP, UTM5, RADIUS, rrdtool, RouterOS, Postfix, Dovecot, Roundcube, ClamAV, SpamAssassin, Bind9, PowerDNS, PowerDNS Recursor, iptables, ebtables, bridge-utils, tcptraceroute, qemu-kvm, libvirt, VMmanager, DHCP, IPMI, IPv6, NDP, NFS, epoll, libmaycloud, SOAP, python-lxml, python-requests, Firezone, Flussonic, ffmpeg, systemd, ssh, scp, Raspbian, Armbian, Midnight Commander, links, GIMP, Inkscape, Sublime Text, Visual Studio Code.</p>
 
