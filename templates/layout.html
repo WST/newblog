@@ -19,7 +19,7 @@
 				{% for href, title in [['/', 'Об авторе'], ['/articles', 'Статьи'], ['/gallery', 'Фотогалерея'], ['/social', 'Контакты']] %}<li{% if href == "/" %}{% if this|url == "/" %} class="active"{% endif %}{% else %}{% if this.is_child_of(href) %} class="active"{% endif %}{% endif %}><a href="{{ href|url }}">{{ title }}</a></li>{% endfor %}
 			</ul>
 		</nav>
-		<div id="pony" style="float: right;position: relative; top: -180px; left: 0px; width: 164px; height: 200px; background-image: url('/static/images/really_cute_apple_bloom_by_kuren247-d6kdnrh.png');"></div>
+		<!--<div id="pony" style="float: right;position: relative; top: -180px; left: 0px; width: 164px; height: 200px; background-image: url('/static/images/really_cute_apple_bloom_by_kuren247-d6kdnrh.png');"></div>-->
 	</header>
 	<div class="page">
 		{% block body %}{% endblock %}
